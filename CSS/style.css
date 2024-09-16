@@ -1,0 +1,195 @@
+* {
+    padding: 0;
+    margin: 0;  
+    font-family: sans-serif;
+    box-sizing: border-box;
+  }
+  
+  body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid;
+    width: 80%;
+    background-repeat: repeat;
+    padding: 20px;
+    background-image: url(/IMAGES/images.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;  }
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  
+  .header .txt {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .header .txt .para {
+    display: flex;
+    gap: 2px;
+    align-items: center;
+    justify-content: center;
+    color: blue;
+  }
+  
+  .header .symbol ul {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+  }
+  
+  .subcontainer {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+  }
+  
+  .box1, .box2, .box3, .box4, .box5 {
+    border: 1px solid;
+    border-radius: 20px;
+    background-color: #f3f1f1;
+    padding: 20px;
+  }
+  
+  .box1 .bg_photo img {
+    width: 100%;
+    height: 150px;
+    border-radius: 20px;
+  }
+  
+  .box1 #img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-top: -60px;
+    border: 5px solid white;
+  }
+  
+  .content {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .content h5 {
+    font-weight: bold;
+    font-size: 25px;
+  }
+  
+  .content p {
+    font-size: 18px;
+  }
+  
+  .content button {
+    width: 100px;
+    height: 40px;
+  }
+  
+  #sav {
+    background-color: rgb(34, 34, 248);
+    color: white;
+  }
+  
+  .box2 .col, .box3 .col, .box4 .col, .box5 .col {
+    background-color: white;
+    border-radius: 10px;
+    padding: 10px;
+  }
+  
+  .box3, .box4, .box5 {
+    gap: 20px;
+  }
+  
+  .box4 .interestboxs ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+  }
+  
+  .box4 .interestboxs ul li {
+    color: blue;
+    padding: 10px;
+    border: 1px solid;
+    border-radius: 10px;
+    text-align: center;
+  }
+  
+  button {
+    width: 100%;
+    padding: 10px;
+    font-size: 18px;
+  }
+  .interestboxs ul li
+  {
+    list-style: none;
+  }
+  .box4 button
+  {
+    background-color: #fff;
+    margin-top: 20px;
+  }
+  .box5 .social .col
+  {
+    background-color: #fff;
+    margin-top: 10px;
+  }
+  
+  /* MEDIA QUERIES */
+  @media (max-width: 768px) {
+    .container {
+      width: 95%;
+    }
+  
+    .header {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .subcontainer {
+      flex-direction: column;
+      width: 100%;
+    }
+  
+    .box1, .box2, .box3, .box4, .box5 {
+      width: 100%;
+    }
+  
+    .header .symbol ul {
+      gap: 20px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .header .txt h2 {
+      font-size: 20px;
+    }
+  
+    .content h5 {
+      font-size: 18px;
+    }
+  
+    .content p {
+      font-size: 14px;
+    }
+  
+    button {
+      font-size: 16px;
+      padding: 8px;
+    }
+  }
+  
